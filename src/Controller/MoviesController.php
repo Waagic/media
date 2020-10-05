@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Movies;
 use App\Form\MoviesType;
 use App\Repository\MoviesRepository;
+use App\Service\API\MovieDbManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

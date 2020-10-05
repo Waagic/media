@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <h1>Recherche</h1>
+        <h2>Résultats</h2>
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex flex-row">
+                    {% for result in results['results'] %}
+                        <div class="col-3 mr-3">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top"
+                                     src="https://image.tmdb.org/t/p/w500/{{ result.poster_path }}">
+                                <div class="card-body">
+                                    <h5 class="card-title d-flex justify-content-center">{{ result.title }}</h5>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

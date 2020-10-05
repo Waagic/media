@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e8e47f2-e913-49ee-a81a-17e0b3809bdd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Service/API/MovieDbManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/results.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MoviesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MoviesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +132,7 @@
     <property name="DatabaseDriversLRU" value="oracle&#10;mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -140,6 +140,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/templates/front" />
@@ -160,7 +163,7 @@
       <workItem from="1601558223880" duration="3025000" />
       <workItem from="1601561451956" duration="257000" />
       <workItem from="1601561918926" duration="5036000" />
-      <workItem from="1601902062532" duration="4795000" />
+      <workItem from="1601902062532" duration="7173000" />
     </task>
     <task id="LOCAL-00001" summary="WIP - Movies">
       <created>1601567345329</created>
@@ -169,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601567345329</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="WIP - Movies - Search">
+      <created>1601907254165</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601907254165</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +189,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="WIP - Movies" />
-    <option name="LAST_COMMIT_MESSAGE" value="WIP - Movies" />
+    <MESSAGE value="WIP - Movies - Search" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP - Movies - Search" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1177" y="533" key="#SQL_Dialects" timestamp="1601560893384">
@@ -190,14 +201,15 @@
       <screen x="0" y="23" width="2560" height="1359" />
     </state>
     <state x="1520" y="368" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1359@0.23.2560.1359" timestamp="1601562026369" />
-    <state x="1658" y="465" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601905279516">
+    <state x="1658" y="465" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601909061290">
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
-    <state x="1658" y="465" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.2560.1361@0.23.2560.1361" timestamp="1601905279516" />
-    <state x="1497" y="210" key="CommitChangelistDialog2" timestamp="1601567344285">
-      <screen x="0" y="23" width="2560" height="1359" />
+    <state x="1658" y="465" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.2560.1361@0.23.2560.1361" timestamp="1601909061290" />
+    <state x="1497" y="210" key="CommitChangelistDialog2" timestamp="1601907253905">
+      <screen x="0" y="23" width="2560" height="1361" />
     </state>
     <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1359@0.23.2560.1359" timestamp="1601567344285" />
+    <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1361@0.23.2560.1361" timestamp="1601907253905" />
     <state x="1566" y="487" key="EditFileWatcherDialog" timestamp="1601547424437">
       <screen x="0" y="23" width="2560" height="1359" />
     </state>
@@ -222,14 +234,15 @@
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
     <state x="1666" y="420" key="NewPhpClassDialog/0.23.2560.1361@0.23.2560.1361" timestamp="1601902361327" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1601906585898">
+    <state width="500" height="445" key="SwitcherDM" timestamp="1601909201799">
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/0.23.2560.1361@0.23.2560.1361" timestamp="1601906585898" />
-    <state x="1520" y="438" key="Vcs.Push.Dialog.v2" timestamp="1601567350283">
-      <screen x="0" y="23" width="2560" height="1359" />
+    <state width="500" height="445" key="SwitcherDM/0.23.2560.1361@0.23.2560.1361" timestamp="1601909201799" />
+    <state x="1520" y="439" key="Vcs.Push.Dialog.v2" timestamp="1601907260359">
+      <screen x="0" y="23" width="2560" height="1361" />
     </state>
     <state x="1520" y="438" key="Vcs.Push.Dialog.v2/0.23.2560.1359@0.23.2560.1359" timestamp="1601567350283" />
+    <state x="1520" y="439" key="Vcs.Push.Dialog.v2/0.23.2560.1361@0.23.2560.1361" timestamp="1601907260359" />
     <state x="1658" y="514" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1601563612029">
       <screen x="0" y="23" width="2560" height="1359" />
     </state>
