@@ -7,16 +7,22 @@
         <div class="row">
             <div class="col-12">
                 <div class="d-flex flex-row">
-                    {% for movie in movies %}
-                        <div class="card mr-3" style="width: 18rem;">
-                            <img class="card-img-top" src="{{ movie.poster }}">
-                            <div class="card-body">
-                                <h5 class="card-title d-flex justify-content-center">{{ movie.title }}</h5>
+                    {% if movies is defined %}
+                        {% for movie in movies %}
+                            <div class="card mr-3" style="width: 18rem;">
+                                <img class="card-img-top" src="{{ movie.poster }}">
+                                <div class="card-body">
+                                    <h5 class="card-title d-flex justify-content-center">{{ movie.title }}</h5>
+                                </div>
                             </div>
-                        </div>
-                    {% endfor %}
+                        {% endfor %}
+                    {% endif %}
                 </div>
             </div>
+            <a href="{{ path('search_movie', {search: 'fight club'}) }}">Recherche</a>
+            {% if results is defined %}
+                {{ dump(results) }}
+            {% endif %}
         </div>
     </div>
 
