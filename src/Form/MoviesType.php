@@ -2,7 +2,7 @@
 
 namespace App\Form;
 
-use App\Entity\Movies;
+use App\Entity\Movie;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -20,7 +20,7 @@ class MoviesType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => Movies::class,
+            'data_class' => Movie::class,
         ]);
     }
 }

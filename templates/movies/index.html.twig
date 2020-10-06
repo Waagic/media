@@ -1,37 +1,26 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Movies index{% endblock %}
+{% block title %}Tous les films{% endblock %}
 
 {% block body %}
-    <h1>Movies index</h1>
-
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Title</th>
-                <th>Poster</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for movie in movies %}
-            <tr>
-                <td>{{ movie.id }}</td>
-                <td>{{ movie.Title }}</td>
-                <td>{{ movie.Poster }}</td>
-                <td>
-                    <a href="{{ path('movies_show', {'id': movie.id}) }}">show</a>
-                    <a href="{{ path('movies_edit', {'id': movie.id}) }}">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="4">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-
-    <a href="{{ path('movies_new') }}">Create new</a>
+    <div class="container-fluid">
+        <h1>Tous les films</h1>
+        <div class="row">
+            {% for movie in movies %}
+                <div class="col-6 col-md-4 col-xl-3">
+                    <div class="card media-card mb-4">
+                        <form method="post" action="{{ path('movies_delete', {'id': movie.id}) }}" onsubmit="return confirm('Are you sure you want to delete this item?');">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ movie.id) }}">
+                            <button class="btn btn-danger">Delete</button>
+                        </form>
+                        <img class="card-img-top" src="{{ movie.poster }}">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-center">{{ movie.title }}</h5>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 {% endblock %}

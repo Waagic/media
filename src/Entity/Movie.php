@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity(repositoryClass=MoviesRepository::class)
  */
-class Movies
+class Movie
 {
     /**
      * @ORM\Id
@@ -20,12 +20,12 @@ class Movies
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $Title;
+    private $itle;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $Poster;
+    private $poster;
 
     public function getId(): ?int
     {
@@ -34,24 +34,24 @@ class Movies
 
     public function getTitle(): ?string
     {
-        return $this->Title;
+        return $this->title;
     }
 
-    public function setTitle(string $Title): self
+    public function setTitle(string $title): self
     {
-        $this->Title = $Title;
+        $this->title = $title;
 
         return $this;
     }
 
     public function getPoster(): ?string
     {
-        return $this->Poster;
+        return $this->poster;
     }
 
-    public function setPoster(string $Poster): self
+    public function setPoster(string $poster): self
     {
-        $this->Poster = $Poster;
+        $this->poster = $poster;
 
         return $this;
     }

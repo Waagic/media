@@ -10,10 +10,10 @@ class MovieDbManager
 {
     protected $baseUrl = "https://api.themoviedb.org/3/";
 
-    public function __construct()
+    public function __construct(string $movieDbApiKey)
     {
         $this->client = HttpClient::create([
-            'auth_bearer' => 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhMGEwMDlmZjg2Y2IxZDA3YWJjMjIyZjM5MzM0ZjRmYSIsInN1YiI6IjVlOGI0NmM3ZmZkNDRkMDAxNTFhZTdlMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.0MrGtbYZmmFVVHS5Nighnny0Ol5sQWEdgvWGgDgL2QM'
+            'auth_bearer' => $movieDbApiKey
         ]);
     }
 

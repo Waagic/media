@@ -26,7 +26,7 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/search-movie", name="search_movie")
+     * @Route("/movies/search", name="search_movies")
      * @param Request $request
      * @param MovieDbManager $movieDb
      * @return Response

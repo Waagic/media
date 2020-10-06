@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Entity\Movies;
+use App\Entity\Movie;
 use App\Form\MoviesType;
 use App\Repository\MoviesRepository;
 use App\Service\API\MovieDbManager;
@@ -28,31 +28,27 @@ class MoviesController extends AbstractController
 
     /**
      * @Route("/new", name="movies_new", methods={"GET","POST"})
+     * @param Request $request
+     * @return Response
      */
     public function new(Request $request): Response
     {
-        $movie = new Movies();
-        $form = $this->createForm(MoviesType::class, $movie);
-        $form->handleRequest($request);
+        $movie = new Movie();
+        $title = $request->request->get("title");
+        $poster = $request->request->get("poster");
+        $movie->setTitle($title);
+        $movie->setPoster("https://image.tmdb.org/t/p/w500/" . $poster);
+        $entityManager = $this->getDoctrine()->getManager();
+        $entityManager->persist($movie);
+        $entityManager->flush();
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($movie);
-            $entityManager->flush();
-
-            return $this->redirectToRoute('movies_index');
-        }
-
-        return $this->render('movies/new.html.twig', [
-            'movie' => $movie,
-            'form' => $form->createView(),
-        ]);
+        return $this->redirectToRoute('movies_index');
     }
 
     /**
      * @Route("/{id}", name="movies_show", methods={"GET"})
      */
-    public function show(Movies $movie): Response
+    public function show(Movie $movie): Response
     {
         return $this->render('movies/show.html.twig', [
             'movie' => $movie,
@@ -62,7 +58,7 @@ class MoviesController extends AbstractController
     /**
      * @Route("/{id}/edit", name="movies_edit", methods={"GET","POST"})
      */
-    public function edit(Request $request, Movies $movie): Response
+    public function edit(Request $request, Movie $movie): Response
     {
         $form = $this->createForm(MoviesType::class, $movie);
         $form->handleRequest($request);
@@ -80,9 +76,12 @@ class MoviesController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="movies_delete", methods={"DELETE"})
+     * @Route("/delete/{id}", name="movies_delete", methods={"DELETE"})
+     * @param Request $request
+     * @param Movie $movie
+     * @return Response
      */
-    public function delete(Request $request, Movies $movie): Response
+    public function delete(Request $request, Movie $movie): Response
     {
         if ($this->isCsrfTokenValid('delete'.$movie->getId(), $request->request->get('_token'))) {
             $entityManager = $this->getDoctrine()->getManager();

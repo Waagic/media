@@ -1,15 +1,20 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div class="container">
+    <div class="container-fluid">
         <h1>Recherche</h1>
         <h2>Résultats</h2>
         <div class="row">
             <div class="col-12">
-                <div class="d-flex flex-row">
+                <div class="row">
                     {% for result in results['results'] %}
-                        <div class="col-3 mr-3">
-                            <div class="card" style="width: 18rem;">
+                        <div class="col-6 col-md-4 col-xl-3">
+                            <div class="card media-card mb-4">
+                                <form action="{{ path('movies_new') }}" method="post">
+                                    <input type="hidden" id="title" name="title" value="{{ result.title }}">
+                                    <input type="hidden" id="poster" name="poster" value="{{ result.poster_path }}">
+                                    <input type="submit" value="Ajouter" class="ml-2 btn btn-success">
+                                </form>
                                 <img class="card-img-top"
                                      src="https://image.tmdb.org/t/p/w500/{{ result.poster_path }}">
                                 <div class="card-body">
