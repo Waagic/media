@@ -23,4 +23,11 @@ class MovieDbManager
         $results = $response->toArray();
         return $results;
     }
+
+    public function searchSeries($string)
+    {
+        $response = $this->client->request('GET', 'https://api.themoviedb.org/3/search/tv?query=' . $string);
+        $results = $response->toArray();
+        return $results;
+    }
 }

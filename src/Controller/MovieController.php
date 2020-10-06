@@ -4,7 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Movie;
 use App\Form\MoviesType;
-use App\Repository\MoviesRepository;
+use App\Repository\MovieRepository;
 use App\Service\API\MovieDbManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -14,15 +14,17 @@ use Symfony\Component\Routing\Annotation\Route;
 /**
  * @Route("/movies")
  */
-class MoviesController extends AbstractController
+class MovieController extends AbstractController
 {
     /**
      * @Route("/", name="movies_index", methods={"GET"})
+     * @param MovieRepository $movieRepository
+     * @return Response
      */
-    public function index(MoviesRepository $moviesRepository): Response
+    public function index(MovieRepository $movieRepository): Response
     {
         return $this->render('movies/index.html.twig', [
-            'movies' => $moviesRepository->findAll(),
+            'movies' => $movieRepository->findAll(),
         ]);
     }
 
@@ -47,6 +49,8 @@ class MoviesController extends AbstractController
 
     /**
      * @Route("/{id}", name="movies_show", methods={"GET"})
+     * @param Movie $movie
+     * @return Response
      */
     public function show(Movie $movie): Response
     {
@@ -57,6 +61,9 @@ class MoviesController extends AbstractController
 
     /**
      * @Route("/{id}/edit", name="movies_edit", methods={"GET","POST"})
+     * @param Request $request
+     * @param Movie $movie
+     * @return Response
      */
     public function edit(Request $request, Movie $movie): Response
     {

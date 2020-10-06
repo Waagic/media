@@ -20,7 +20,7 @@ class Movie
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $itle;
+    private $title;
 
     /**
      * @ORM\Column(type="string", length=255)
