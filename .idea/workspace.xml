@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e8e47f2-e913-49ee-a81a-17e0b3809bdd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/series_results.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MoviesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MoviesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/MoviesRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/MovieRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/SeriesRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/SerieRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/API/MovieDbManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/API/MovieDbManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/results.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/movies_results.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +132,7 @@
     <property name="DatabaseDriversLRU" value="oracle&#10;mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/styles" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -147,8 +145,8 @@
       <recent name="$PROJECT_DIR$/templates/front" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/styles" />
       <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/assets/styles" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -167,7 +165,7 @@
       <workItem from="1601561451956" duration="257000" />
       <workItem from="1601561918926" duration="5036000" />
       <workItem from="1601902062532" duration="7449000" />
-      <workItem from="1601968220413" duration="12256000" />
+      <workItem from="1601968220413" duration="12924000" />
     </task>
     <task id="LOCAL-00001" summary="WIP - Movies">
       <created>1601567345329</created>
@@ -197,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601988051739</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="nik Romain">
+      <created>1601989126901</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601989126901</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +214,8 @@
     <MESSAGE value="WIP - Movies" />
     <MESSAGE value="WIP - Movies - Search" />
     <MESSAGE value="WIP - Movies ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="WIP - Movies ok" />
+    <MESSAGE value="nik Romain" />
+    <option name="LAST_COMMIT_MESSAGE" value="nik Romain" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1177" y="533" key="#SQL_Dialects" timestamp="1601560893384">
@@ -220,19 +226,19 @@
       <screen x="0" y="23" width="2560" height="1359" />
     </state>
     <state x="1520" y="368" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1359@0.23.2560.1359" timestamp="1601562026369" />
-    <state x="1696" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601987862523">
+    <state x="1696" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601989084925">
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
-    <state x="1696" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.2560.1361@0.23.2560.1361" timestamp="1601987862523" />
+    <state x="1696" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.2560.1361@0.23.2560.1361" timestamp="1601989084925" />
     <state x="1658" y="465" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601909061290">
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
     <state x="1658" y="465" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.2560.1361@0.23.2560.1361" timestamp="1601909061290" />
-    <state x="1497" y="210" key="CommitChangelistDialog2" timestamp="1601988051489">
+    <state x="1497" y="210" key="CommitChangelistDialog2" timestamp="1601989126708">
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
     <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1359@0.23.2560.1359" timestamp="1601567344285" />
-    <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1361@0.23.2560.1361" timestamp="1601988051489" />
+    <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1361@0.23.2560.1361" timestamp="1601989126708" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1601909740247">
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
@@ -269,11 +275,11 @@
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.23.2560.1361@0.23.2560.1361" timestamp="1601977533825" />
-    <state x="1520" y="439" key="Vcs.Push.Dialog.v2" timestamp="1601988056428">
+    <state x="1520" y="439" key="Vcs.Push.Dialog.v2" timestamp="1601989130650">
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
     <state x="1520" y="438" key="Vcs.Push.Dialog.v2/0.23.2560.1359@0.23.2560.1359" timestamp="1601567350283" />
-    <state x="1520" y="439" key="Vcs.Push.Dialog.v2/0.23.2560.1361@0.23.2560.1361" timestamp="1601988056428" />
+    <state x="1520" y="439" key="Vcs.Push.Dialog.v2/0.23.2560.1361@0.23.2560.1361" timestamp="1601989130650" />
     <state x="1658" y="514" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1601563612029">
       <screen x="0" y="23" width="2560" height="1359" />
     </state>

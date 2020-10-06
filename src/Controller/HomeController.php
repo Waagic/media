@@ -35,7 +35,7 @@ class HomeController extends AbstractController
     {
         $search = $request->get("search");
         $results = $movieDb->searchMovies($search);
-        return $this->render('results.html.twig', [
+        return $this->render('movies_results.html.twig', [
             'results' => $results
         ]);
     }
@@ -50,7 +50,7 @@ class HomeController extends AbstractController
     {
         $search = $request->get("search");
         $results = $movieDb->searchSeries($search);
-        return $this->render('results.html.twig', [
+        return $this->render('series_results.html.twig', [
             'results' => $results
         ]);
     }
