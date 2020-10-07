@@ -1,23 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e8e47f2-e913-49ee-a81a-17e0b3809bdd" name="Default Changelist" comment="WIP - Series">
-      <change afterPath="$PROJECT_DIR$/src/Controller/SerieController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/series/_delete_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/series/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/series/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/series/show.html.twig" afterDir="false" />
+    <list default="true" id="2e8e47f2-e913-49ee-a81a-17e0b3809bdd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/VideoGamesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/API/RAWGManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/videogames_results.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MovieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MovieController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Movie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Movie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Serie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Serie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/MoviesType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/MovieType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/movies/edit.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/movies/new.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/movies_results.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/movies_results.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/series_results.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/series_results.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +132,7 @@
     <property name="DatabaseDriversLRU" value="oracle&#10;mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/series" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Controller" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -152,9 +141,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates/series" />
       <recent name="$PROJECT_DIR$/src/Controller" />
       <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/src/Service/API" />
+      <recent name="$PROJECT_DIR$/templates/series" />
       <recent name="$PROJECT_DIR$/assets/styles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -181,7 +171,7 @@
       <workItem from="1601902062532" duration="7449000" />
       <workItem from="1601968220413" duration="12975000" />
       <workItem from="1601990118114" duration="303000" />
-      <workItem from="1602080779056" duration="3212000" />
+      <workItem from="1602080779056" duration="4730000" />
     </task>
     <task id="LOCAL-00001" summary="WIP - Movies">
       <created>1601567345329</created>
@@ -225,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601989669037</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="WIP - Series ok">
+      <created>1602084248139</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602084248139</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +236,8 @@
     <MESSAGE value="WIP - Movies ok" />
     <MESSAGE value="nik Romain" />
     <MESSAGE value="WIP - Series" />
-    <option name="LAST_COMMIT_MESSAGE" value="WIP - Series" />
+    <MESSAGE value="WIP - Series ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP - Series ok" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1177" y="533" key="#SQL_Dialects" timestamp="1601560893384">
@@ -258,11 +256,11 @@
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
     <state x="1658" y="465" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.2560.1361@0.23.2560.1361" timestamp="1601909061290" />
-    <state x="1497" y="210" key="CommitChangelistDialog2" timestamp="1601990168825">
+    <state x="1497" y="210" key="CommitChangelistDialog2" timestamp="1602084247946">
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
     <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1359@0.23.2560.1359" timestamp="1601567344285" />
-    <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1361@0.23.2560.1361" timestamp="1601990168825" />
+    <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1361@0.23.2560.1361" timestamp="1602084247946" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1601909740247">
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
@@ -299,11 +297,11 @@
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.23.2560.1361@0.23.2560.1361" timestamp="1601977533825" />
-    <state x="1520" y="439" key="Vcs.Push.Dialog.v2" timestamp="1601990137736">
+    <state x="1520" y="439" key="Vcs.Push.Dialog.v2" timestamp="1602084256542">
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
     <state x="1520" y="438" key="Vcs.Push.Dialog.v2/0.23.2560.1359@0.23.2560.1359" timestamp="1601567350283" />
-    <state x="1520" y="439" key="Vcs.Push.Dialog.v2/0.23.2560.1361@0.23.2560.1361" timestamp="1601990137736" />
+    <state x="1520" y="439" key="Vcs.Push.Dialog.v2/0.23.2560.1361@0.23.2560.1361" timestamp="1602084256542" />
     <state x="1658" y="514" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1601563612029">
       <screen x="0" y="23" width="2560" height="1359" />
     </state>

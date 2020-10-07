@@ -6,6 +6,7 @@ namespace App\Controller;
 use App\Repository\MovieRepository;
 use App\Repository\SerieRepository;
 use App\Service\API\MovieDbManager;
+use App\Service\API\RAWGManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -55,6 +56,21 @@ class HomeController extends AbstractController
         $search = $request->get("search");
         $results = $movieDb->searchSeries($search);
         return $this->render('series_results.html.twig', [
+            'results' => $results
+        ]);
+    }
+
+    /**
+     * @Route("/videogames/search", name="videogames_series")
+     * @param Request $request
+     * @param RAWGManager $rawg
+     * @return Response
+     */
+    public function searchVideoGames(Request $request, RAWGManager $rawg): Response
+    {
+        $search = $request->get("search");
+        $results = $rawg->searchVideoGame($search);
+        return $this->render('videogames_results.html.twig', [
             'results' => $results
         ]);
     }
