@@ -3,7 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Movie;
-use App\Form\MoviesType;
+use App\Form\MovieType;
 use App\Repository\MovieRepository;
 use App\Service\API\MovieDbManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -56,29 +56,6 @@ class MovieController extends AbstractController
     {
         return $this->render('movies/show.html.twig', [
             'movie' => $movie,
-        ]);
-    }
-
-    /**
-     * @Route("/{id}/edit", name="movies_edit", methods={"GET","POST"})
-     * @param Request $request
-     * @param Movie $movie
-     * @return Response
-     */
-    public function edit(Request $request, Movie $movie): Response
-    {
-        $form = $this->createForm(MoviesType::class, $movie);
-        $form->handleRequest($request);
-
-        if ($form->isSubmitted() && $form->isValid()) {
-            $this->getDoctrine()->getManager()->flush();
-
-            return $this->redirectToRoute('movies_index');
-        }
-
-        return $this->render('movies/edit.html.twig', [
-            'movie' => $movie,
-            'form' => $form->createView(),
         ]);
     }
 

@@ -4,6 +4,7 @@
 namespace App\Controller;
 
 use App\Repository\MovieRepository;
+use App\Repository\SerieRepository;
 use App\Service\API\MovieDbManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -15,13 +16,16 @@ class HomeController extends AbstractController
     /**
      * @Route("/", name="index")
      * @param MovieRepository $movieRepository
+     * @param SerieRepository $serieRepository
      * @return Response
      */
-    public function index(MovieRepository $movieRepository): Response
+    public function index(MovieRepository $movieRepository, SerieRepository $serieRepository): Response
     {
         $movies = $movieRepository->findAll();
+        $series = $serieRepository->findAll();
         return $this->render('index.html.twig', [
-            'movies' => $movies
+            'movies' => $movies,
+            'series' => $series
         ]);
     }
 

@@ -13,7 +13,7 @@
                                 <form action="{{ path('movies_new') }}" method="post">
                                     <input type="hidden" id="title" name="title" value="{{ result.title }}">
                                     <input type="hidden" id="poster" name="poster" value="{{ result.poster_path }}">
-                                    <input type="submit" value="Ajouter" class="ml-2 btn btn-success">
+                                    <input type="submit" value="Ajouter" class="ml-2 btn btn-outline-success">
                                 </form>
                                 <img class="card-img-top"
                                      src="https://image.tmdb.org/t/p/w500/{{ result.poster_path }}">

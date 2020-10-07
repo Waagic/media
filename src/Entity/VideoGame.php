@@ -2,13 +2,13 @@
 
 namespace App\Entity;
 
-use App\Repository\SerieRepository;
+use App\Repository\VideoGameRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=SerieRepository::class)
+ * @ORM\Entity(repositoryClass=VideoGameRepository::class)
  */
-class Serie
+class VideoGame
 {
     /**
      * @ORM\Id
