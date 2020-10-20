@@ -10,13 +10,13 @@
                     {% for result in results['results'] %}
                         <div class="col-6 col-md-4 col-xl-3">
                             <div class="card media-card mb-4">
-                                <form action="{{ path('series_new') }}" method="post">
+                                <form action="{{ path('videogames_new') }}" method="post">
                                     <input type="hidden" id="title" name="title" value="{{ result.name }}">
-                                    <input type="hidden" id="poster" name="poster" value="{{ result.poster_path }}">
+                                    <input type="hidden" id="poster" name="poster" value="{{ result.background_image }}">
                                     <input type="submit" value="Ajouter" class="ml-2 btn btn-outline-success">
                                 </form>
                                 <img class="card-img-top"
-                                     src="https://image.tmdb.org/t/p/w500/{{ result.poster_path }}">
+                                     src="{{ result.background_image }}">
                                 <div class="card-body">
                                     <h5 class="card-title d-flex justify-content-center">{{ result.name }}</h5>
                                 </div>

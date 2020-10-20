@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e8e47f2-e913-49ee-a81a-17e0b3809bdd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/VideoGamesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Service/API/RAWGManager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/videogames_results.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/games/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/games/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/_card.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/VideoGamesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/VideoGamesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/API/RAWGManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/API/RAWGManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/videogames_results.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/videogames_results.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +137,7 @@
     <property name="DatabaseDriversLRU" value="oracle&#10;mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Controller" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/games" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -140,17 +145,17 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Controller" />
-      <recent name="$PROJECT_DIR$/templates" />
-      <recent name="$PROJECT_DIR$/src/Service/API" />
-      <recent name="$PROJECT_DIR$/templates/series" />
-      <recent name="$PROJECT_DIR$/assets/styles" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/templates/movies" />
       <recent name="$PROJECT_DIR$/templates/front" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/games" />
+      <recent name="$PROJECT_DIR$/src/Controller" />
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/src/Service/API" />
+      <recent name="$PROJECT_DIR$/templates/series" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -171,7 +176,11 @@
       <workItem from="1601902062532" duration="7449000" />
       <workItem from="1601968220413" duration="12975000" />
       <workItem from="1601990118114" duration="303000" />
-      <workItem from="1602080779056" duration="4730000" />
+      <workItem from="1602080779056" duration="4973000" />
+      <workItem from="1602141705032" duration="1716000" />
+      <workItem from="1603097511536" duration="542000" />
+      <workItem from="1603115207766" duration="524000" />
+      <workItem from="1603182459252" duration="2814000" />
     </task>
     <task id="LOCAL-00001" summary="WIP - Movies">
       <created>1601567345329</created>
@@ -222,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602084248139</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="WIP - Jeux">
+      <created>1602085850012</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1602085850012</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +253,8 @@
     <MESSAGE value="nik Romain" />
     <MESSAGE value="WIP - Series" />
     <MESSAGE value="WIP - Series ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="WIP - Series ok" />
+    <MESSAGE value="WIP - Jeux" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP - Jeux" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1177" y="533" key="#SQL_Dialects" timestamp="1601560893384">
@@ -256,11 +273,11 @@
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
     <state x="1658" y="465" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.2560.1361@0.23.2560.1361" timestamp="1601909061290" />
-    <state x="1497" y="210" key="CommitChangelistDialog2" timestamp="1602084247946">
+    <state x="1497" y="210" key="CommitChangelistDialog2" timestamp="1602085849848">
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
     <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1359@0.23.2560.1359" timestamp="1601567344285" />
-    <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1361@0.23.2560.1361" timestamp="1602084247946" />
+    <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1361@0.23.2560.1361" timestamp="1602085849848" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1601909740247">
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
@@ -297,11 +314,11 @@
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.23.2560.1361@0.23.2560.1361" timestamp="1601977533825" />
-    <state x="1520" y="439" key="Vcs.Push.Dialog.v2" timestamp="1602084256542">
+    <state x="1520" y="439" key="Vcs.Push.Dialog.v2" timestamp="1602085853840">
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
     <state x="1520" y="438" key="Vcs.Push.Dialog.v2/0.23.2560.1359@0.23.2560.1359" timestamp="1601567350283" />
-    <state x="1520" y="439" key="Vcs.Push.Dialog.v2/0.23.2560.1361@0.23.2560.1361" timestamp="1602084256542" />
+    <state x="1520" y="439" key="Vcs.Push.Dialog.v2/0.23.2560.1361@0.23.2560.1361" timestamp="1602085853840" />
     <state x="1658" y="514" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1601563612029">
       <screen x="0" y="23" width="2560" height="1359" />
     </state>
@@ -310,5 +327,9 @@
       <screen x="0" y="23" width="2560" height="1359" />
     </state>
     <state x="1380" y="123" width="1080" height="1159" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.2560.1359@0.23.2560.1359" timestamp="1601547327859" />
+    <state x="1712" y="623" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603183675710">
+      <screen x="0" y="23" width="2560" height="1360" />
+    </state>
+    <state x="1712" y="623" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.2560.1360@0.23.2560.1360" timestamp="1603183675710" />
   </component>
 </project>

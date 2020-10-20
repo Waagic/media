@@ -4,7 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Serie;
 use App\Entity\VideoGame;
-use App\Repository\SerieRepository;
+use App\Repository\VideoGameRepository;
 use App\Service\API\MovieDbManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -23,8 +23,8 @@ class VideoGamesController extends AbstractController
      */
     public function index(VideoGameRepository $videoGameRepository): Response
     {
-        return $this->render('series/index.html.twig', [
-            'series' => $videoGameRepository->findAll(),
+        return $this->render('games/index.html.twig', [
+            'games' => $videoGameRepository->findAll(),
         ]);
     }
 
@@ -73,6 +73,6 @@ class VideoGamesController extends AbstractController
             $entityManager->flush();
         }
 
-        return $this->redirectToRoute('videogame_index');
+        return $this->redirectToRoute('videogames_index');
     }
 }

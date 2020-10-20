@@ -5,6 +5,7 @@ namespace App\Controller;
 
 use App\Repository\MovieRepository;
 use App\Repository\SerieRepository;
+use App\Repository\VideoGameRepository;
 use App\Service\API\MovieDbManager;
 use App\Service\API\RAWGManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -18,15 +19,18 @@ class HomeController extends AbstractController
      * @Route("/", name="index")
      * @param MovieRepository $movieRepository
      * @param SerieRepository $serieRepository
+     * @param VideoGameRepository $gameRepository
      * @return Response
      */
-    public function index(MovieRepository $movieRepository, SerieRepository $serieRepository): Response
+    public function index(MovieRepository $movieRepository, SerieRepository $serieRepository, VideoGameRepository $gameRepository): Response
     {
         $movies = $movieRepository->findAll();
         $series = $serieRepository->findAll();
+        $games = $gameRepository->findAll();
         return $this->render('index.html.twig', [
             'movies' => $movies,
-            'series' => $series
+            'series' => $series,
+            'games' => $games
         ]);
     }
 
@@ -61,7 +65,7 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/videogames/search", name="videogames_series")
+     * @Route("/videogames/search", name="search_videogames")
      * @param Request $request
      * @param RAWGManager $rawg
      * @return Response

@@ -9,6 +9,9 @@
 
     .card-img-top{
         transition: opacity 0.5s ease-in-out;
+        min-height: 432px;
+        min-width: 288px;
+        object-fit: cover;
     }
 
     form {

@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tous les jeux{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <h1>Tous les jeux</h1>
+        <div class="row">
+            {% for game in games %}
+                <div class="col-6 col-md-4 col-xl-3">
+                    <div class="card media-card mb-4">
+                        <form method="post" action="{{ path('videogames_delete', {'id': game.id}) }}" onsubmit="return confirm('Are you sure you want to delete this item?');">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ game.id) }}">
+                            <button class="btn btn-outline-danger">Delete</button>
+                        </form>
+                        <img class="card-img-top" src="{{ game.poster }}">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-center">{{ game.title }}</h5>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
