@@ -27,25 +27,21 @@ class AlbumController extends AbstractController
 
     /**
      * @Route("/new", name="album_new", methods={"GET","POST"})
+     * @param Request $request
+     * @return Response
      */
     public function new(Request $request): Response
     {
         $album = new Album();
-        $form = $this->createForm(AlbumType::class, $album);
-        $form->handleRequest($request);
+        $title = $request->request->get("title");
+        $poster = $request->request->get("poster");
+        $album->setTitle($title);
+        $album->setPoster($poster);
+        $entityManager = $this->getDoctrine()->getManager();
+        $entityManager->persist($album);
+        $entityManager->flush();
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($album);
-            $entityManager->flush();
-
-            return $this->redirectToRoute('album_index');
-        }
-
-        return $this->render('album/new.html.twig', [
-            'album' => $album,
-            'form' => $form->createView(),
-        ]);
+        return $this->redirectToRoute('album_index');
     }
 
     /**
@@ -55,26 +51,6 @@ class AlbumController extends AbstractController
     {
         return $this->render('album/show.html.twig', [
             'album' => $album,
-        ]);
-    }
-
-    /**
-     * @Route("/{id}/edit", name="album_edit", methods={"GET","POST"})
-     */
-    public function edit(Request $request, Album $album): Response
-    {
-        $form = $this->createForm(AlbumType::class, $album);
-        $form->handleRequest($request);
-
-        if ($form->isSubmitted() && $form->isValid()) {
-            $this->getDoctrine()->getManager()->flush();
-
-            return $this->redirectToRoute('album_index');
-        }
-
-        return $this->render('album/edit.html.twig', [
-            'album' => $album,
-            'form' => $form->createView(),
         ]);
     }
 

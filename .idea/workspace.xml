@@ -2,22 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e8e47f2-e913-49ee-a81a-17e0b3809bdd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201020095953.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/AlbumController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Album.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/AlbumType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/AlbumRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Service/API/SpotifyManager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/album/_delete_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/album/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/album/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/album/show.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/albums_results.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/_card.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AlbumController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AlbumController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/VideoGamesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/VideoGamesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/API/SpotifyManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/API/DeezerManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/album/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/album/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/albums_results.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/albums_results.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +183,7 @@
       <workItem from="1603097511536" duration="542000" />
       <workItem from="1603115207766" duration="524000" />
       <workItem from="1603182459252" duration="5330000" />
-      <workItem from="1603196031587" duration="2634000" />
+      <workItem from="1603196031587" duration="6101000" />
     </task>
     <task id="LOCAL-00001" summary="WIP - Movies">
       <created>1601567345329</created>
@@ -257,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603185646113</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="WIP - Album">
+      <created>1603199569341</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603199569341</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +273,8 @@
     <MESSAGE value="WIP - Series ok" />
     <MESSAGE value="WIP - Jeux" />
     <MESSAGE value="Jeux ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jeux ok" />
+    <MESSAGE value="WIP - Album" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP - Album" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1177" y="533" key="#SQL_Dialects" timestamp="1601560893384">
@@ -286,19 +285,21 @@
       <screen x="0" y="23" width="2560" height="1359" />
     </state>
     <state x="1520" y="368" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1359@0.23.2560.1359" timestamp="1601562026369" />
-    <state x="1696" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601990420475">
-      <screen x="0" y="23" width="2560" height="1361" />
+    <state x="1696" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603202889906">
+      <screen x="0" y="23" width="2560" height="1360" />
     </state>
+    <state x="1696" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.2560.1360@0.23.2560.1360" timestamp="1603202889906" />
     <state x="1696" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.2560.1361@0.23.2560.1361" timestamp="1601990420475" />
-    <state x="1658" y="465" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601909061290">
-      <screen x="0" y="23" width="2560" height="1361" />
+    <state x="1658" y="465" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603203242465">
+      <screen x="0" y="23" width="2560" height="1360" />
     </state>
+    <state x="1658" y="465" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.2560.1360@0.23.2560.1360" timestamp="1603203242465" />
     <state x="1658" y="465" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.2560.1361@0.23.2560.1361" timestamp="1601909061290" />
-    <state x="1497" y="210" key="CommitChangelistDialog2" timestamp="1603185645847">
+    <state x="1497" y="210" key="CommitChangelistDialog2" timestamp="1603199569087">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
     <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1359@0.23.2560.1359" timestamp="1601567344285" />
-    <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1360@0.23.2560.1360" timestamp="1603185645847" />
+    <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1360@0.23.2560.1360" timestamp="1603199569087" />
     <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1361@0.23.2560.1361" timestamp="1602085849848" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1601909740247">
       <screen x="0" y="23" width="2560" height="1361" />
@@ -308,6 +309,10 @@
       <screen x="0" y="23" width="2560" height="1359" />
     </state>
     <state x="1566" y="487" key="EditFileWatcherDialog/0.23.2560.1359@0.23.2560.1359" timestamp="1601547424437" />
+    <state x="618" y="23" key="FileDocumentManager.FileCacheConflict" timestamp="1603203035597">
+      <screen x="0" y="23" width="2560" height="1360" />
+    </state>
+    <state x="618" y="23" key="FileDocumentManager.FileCacheConflict/0.23.2560.1360@0.23.2560.1360" timestamp="1603203035597" />
     <state width="846" height="385" key="GridCell.Tab.0.bottom" timestamp="1601562082409">
       <screen x="0" y="23" width="2560" height="1359" />
     </state>
@@ -336,11 +341,11 @@
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.23.2560.1361@0.23.2560.1361" timestamp="1601977533825" />
-    <state x="1520" y="439" key="Vcs.Push.Dialog.v2" timestamp="1603185652137">
+    <state x="1520" y="439" key="Vcs.Push.Dialog.v2" timestamp="1603199575521">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
     <state x="1520" y="438" key="Vcs.Push.Dialog.v2/0.23.2560.1359@0.23.2560.1359" timestamp="1601567350283" />
-    <state x="1520" y="439" key="Vcs.Push.Dialog.v2/0.23.2560.1360@0.23.2560.1360" timestamp="1603185652137" />
+    <state x="1520" y="439" key="Vcs.Push.Dialog.v2/0.23.2560.1360@0.23.2560.1360" timestamp="1603199575521" />
     <state x="1520" y="439" key="Vcs.Push.Dialog.v2/0.23.2560.1361@0.23.2560.1361" timestamp="1602085853840" />
     <state x="1658" y="514" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1601563612029">
       <screen x="0" y="23" width="2560" height="1359" />

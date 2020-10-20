@@ -9,7 +9,7 @@ use App\Repository\SerieRepository;
 use App\Repository\VideoGameRepository;
 use App\Service\API\MovieDbManager;
 use App\Service\API\RAWGManager;
-use App\Service\API\SpotifyManager;
+use App\Service\API\DeezerManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -87,13 +87,13 @@ class HomeController extends AbstractController
     /**
      * @Route("/albums/search", name="search_albums")
      * @param Request $request
-     * @param SpotifyManager $spotify
+     * @param DeezerManager $deezer
      * @return Response
      */
-    public function searchAlbums(Request $request, SpotifyManager $spotify): Response
+    public function searchAlbums(Request $request, DeezerManager $deezer): Response
     {
         $search = $request->get("search");
-        $results = $spotify->searchAlbums($search);
+        $results = $deezer->searchAlbums($search);
         return $this->render('albums_results.html.twig', [
             'results' => $results
         ]);
