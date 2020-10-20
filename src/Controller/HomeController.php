@@ -3,11 +3,13 @@
 // src/Controller/HomeController.php
 namespace App\Controller;
 
+use App\Repository\AlbumRepository;
 use App\Repository\MovieRepository;
 use App\Repository\SerieRepository;
 use App\Repository\VideoGameRepository;
 use App\Service\API\MovieDbManager;
 use App\Service\API\RAWGManager;
+use App\Service\API\SpotifyManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -20,17 +22,20 @@ class HomeController extends AbstractController
      * @param MovieRepository $movieRepository
      * @param SerieRepository $serieRepository
      * @param VideoGameRepository $gameRepository
+     * @param AlbumRepository $albumRepository
      * @return Response
      */
-    public function index(MovieRepository $movieRepository, SerieRepository $serieRepository, VideoGameRepository $gameRepository): Response
+    public function index(MovieRepository $movieRepository, SerieRepository $serieRepository, VideoGameRepository $gameRepository, AlbumRepository $albumRepository): Response
     {
         $movies = $movieRepository->findAll();
         $series = $serieRepository->findAll();
         $games = $gameRepository->findAll();
+        $albums = $albumRepository->findAll();
         return $this->render('index.html.twig', [
             'movies' => $movies,
             'series' => $series,
-            'games' => $games
+            'games' => $games,
+            'albums' => $albums
         ]);
     }
 
@@ -75,6 +80,21 @@ class HomeController extends AbstractController
         $search = $request->get("search");
         $results = $rawg->searchVideoGame($search);
         return $this->render('videogames_results.html.twig', [
+            'results' => $results
+        ]);
+    }
+
+    /**
+     * @Route("/albums/search", name="search_albums")
+     * @param Request $request
+     * @param SpotifyManager $spotify
+     * @return Response
+     */
+    public function searchAlbums(Request $request, SpotifyManager $spotify): Response
+    {
+        $search = $request->get("search");
+        $results = $spotify->searchAlbums($search);
+        return $this->render('albums_results.html.twig', [
             'results' => $results
         ]);
     }

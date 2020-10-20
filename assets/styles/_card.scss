@@ -1,5 +1,7 @@
 .media-card{
-    height: calc(100% - 25px);
+    max-height: 500px;
+    max-width: 300px;
+    min-height: 260px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -9,8 +11,8 @@
 
     .card-img-top{
         transition: opacity 0.5s ease-in-out;
-        min-height: 432px;
-        min-width: 288px;
+        max-height: 100%;
+        max-width: 100%;
         object-fit: cover;
     }
 

@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container-fluid">
+        <h1>Recherche</h1>
+        <h2>Résultats</h2>
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    {% for result in results['results'] %}
+                        <div class="col-6 col-md-4 col-xl-3">
+                            <div class="card media-card mb-4">
+                                <form action="{{ path('album_new') }}" method="post">
+                                    <input type="hidden" id="title" name="title" value="{{ result.name }}">
+                                    <input type="hidden" id="poster" name="poster" value="{{ result.background_image }}">
+                                    <input type="submit" value="Ajouter" class="ml-2 btn btn-outline-success">
+                                </form>
+                                <img class="card-img-top"
+                                     src="{{ result.background_image }}">
+                                <div class="card-body">
+                                    <h5 class="card-title d-flex justify-content-center">{{ result.name }}</h5>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

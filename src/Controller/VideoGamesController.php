@@ -2,7 +2,6 @@
 
 namespace App\Controller;
 
-use App\Entity\Serie;
 use App\Entity\VideoGame;
 use App\Repository\VideoGameRepository;
 use App\Service\API\MovieDbManager;

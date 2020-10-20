@@ -5,6 +5,7 @@
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     movie_db_api_key: '%env(resolve:MOVIE_DB_API)%'
+    spotify_api_key: '%env(resolve:SPOTIFY_API)%'
 
 services:
     # default configuration for services in *this* file
@@ -34,3 +35,7 @@ services:
     App\Service\API\MovieDbManager:
         arguments:
             - '%movie_db_api_key%'
+
+    App\Service\API\SpotifyManager:
+        arguments:
+            - '%spotify_api_key%'
