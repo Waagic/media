@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e8e47f2-e913-49ee-a81a-17e0b3809bdd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/functions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +181,11 @@
       <workItem from="1603097511536" duration="542000" />
       <workItem from="1603115207766" duration="524000" />
       <workItem from="1603182459252" duration="5330000" />
-      <workItem from="1603196031587" duration="6332000" />
+      <workItem from="1603196031587" duration="6376000" />
+      <workItem from="1603266236746" duration="806000" />
+      <workItem from="1603369234102" duration="4402000" />
+      <workItem from="1603374143120" duration="1962000" />
+      <workItem from="1603438418588" duration="2088000" />
     </task>
     <task id="LOCAL-00001" summary="WIP - Movies">
       <created>1601567345329</created>
@@ -256,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603203330433</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Navbar">
+      <created>1603203540589</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1603203540589</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +291,8 @@
     <MESSAGE value="Jeux ok" />
     <MESSAGE value="WIP - Album" />
     <MESSAGE value="Album ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="Album ok" />
+    <MESSAGE value="Navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Navbar" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1177" y="533" key="#SQL_Dialects" timestamp="1601560893384">
@@ -287,6 +303,10 @@
       <screen x="0" y="23" width="2560" height="1359" />
     </state>
     <state x="1520" y="368" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1359@0.23.2560.1359" timestamp="1601562026369" />
+    <state x="1626" y="508" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603370833160">
+      <screen x="0" y="23" width="2560" height="1360" />
+    </state>
+    <state x="1626" y="508" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1360@0.23.2560.1360" timestamp="1603370833160" />
     <state x="1696" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603202889906">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
@@ -297,11 +317,11 @@
     </state>
     <state x="1658" y="465" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.2560.1360@0.23.2560.1360" timestamp="1603203242465" />
     <state x="1658" y="465" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.2560.1361@0.23.2560.1361" timestamp="1601909061290" />
-    <state x="1497" y="210" key="CommitChangelistDialog2" timestamp="1603203330235">
+    <state x="1497" y="210" key="CommitChangelistDialog2" timestamp="1603203540435">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
     <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1359@0.23.2560.1359" timestamp="1601567344285" />
-    <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1360@0.23.2560.1360" timestamp="1603203330235" />
+    <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1360@0.23.2560.1360" timestamp="1603203540435" />
     <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1361@0.23.2560.1361" timestamp="1602085849848" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1601909740247">
       <screen x="0" y="23" width="2560" height="1361" />
@@ -343,11 +363,11 @@
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.23.2560.1361@0.23.2560.1361" timestamp="1601977533825" />
-    <state x="1520" y="439" key="Vcs.Push.Dialog.v2" timestamp="1603203336303">
+    <state x="1520" y="439" key="Vcs.Push.Dialog.v2" timestamp="1603203546953">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
     <state x="1520" y="438" key="Vcs.Push.Dialog.v2/0.23.2560.1359@0.23.2560.1359" timestamp="1601567350283" />
-    <state x="1520" y="439" key="Vcs.Push.Dialog.v2/0.23.2560.1360@0.23.2560.1360" timestamp="1603203336303" />
+    <state x="1520" y="439" key="Vcs.Push.Dialog.v2/0.23.2560.1360@0.23.2560.1360" timestamp="1603203546953" />
     <state x="1520" y="439" key="Vcs.Push.Dialog.v2/0.23.2560.1361@0.23.2560.1361" timestamp="1602085853840" />
     <state x="1658" y="514" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1601563612029">
       <screen x="0" y="23" width="2560" height="1359" />
@@ -357,9 +377,9 @@
       <screen x="0" y="23" width="2560" height="1359" />
     </state>
     <state x="1380" y="123" width="1080" height="1159" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.2560.1359@0.23.2560.1359" timestamp="1601547327859" />
-    <state x="1712" y="623" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603183675710">
+    <state x="1712" y="623" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603373579112">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
-    <state x="1712" y="623" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.2560.1360@0.23.2560.1360" timestamp="1603183675710" />
+    <state x="1712" y="623" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.2560.1360@0.23.2560.1360" timestamp="1603373579112" />
   </component>
 </project>

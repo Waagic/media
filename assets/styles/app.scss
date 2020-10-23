@@ -1,2 +1,15 @@
 @import "~bootstrap/scss/bootstrap";
 @import "assets/styles/_card.scss";
+
+.add-button {
+    font-size: 1.5em;
+    color: rgb(173, 181, 189);
+}
+
+.off {
+    display: none;
+}
+
+.on {
+    display: block;
+}

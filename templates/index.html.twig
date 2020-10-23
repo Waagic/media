@@ -3,18 +3,20 @@
 {% block body %}
     <div class="container-fluid">
     <h1>Médiathèque</h1>
-    <h2>Films</h2>
+    <div class="d-flex align-items-center">
+        <h2>Films</h2>
+        <i class="add-button far fa-plus-square ml-4"></i>
+        <form action="{{ path('search_movies') }}" method="get" class="search-form off ml-4">
+            <div class="form-search">
+                <input type="text" name="search" id="search" required>
+            </div>
+            <div class="form-search">
+                <input type="submit" value="We go" class="ml-2">
+            </div>
+        </form>
+    </div>
     <div class="row">
         <div class="col-12">
-            <form action="{{ path('search_movies') }}" method="get" class="d-flex mb-2">
-                <div class="form-search">
-                    <label for="name">Ajouter un film : </label>
-                    <input type="text" name="search" id="search" required>
-                </div>
-                <div class="form-search">
-                    <input type="submit" value="We go" class="ml-2">
-                </div>
-            </form>
             <div class="row">
                 {% for movie in movies %}
                     <div class="col-6 col-md-4 col-xl-3">

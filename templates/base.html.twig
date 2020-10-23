@@ -6,6 +6,7 @@
     <title>{% block title %}Bienvenue !{% endblock %}</title>
     {% block stylesheets %}
         {{ encore_entry_link_tags('app') }}
+        {{ encore_entry_script_tags('app') }}
     {% endblock %}
 </head>
 <body>
@@ -45,6 +46,7 @@
 {% endblock %}
 {% block javascripts %}
     {{ encore_entry_script_tags('app') }}
+    <script src="https://kit.fontawesome.com/202d73e1c2.js" crossorigin="anonymous"></script>
 {% endblock %}
 </body>
 </html>
