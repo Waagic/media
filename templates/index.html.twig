@@ -6,7 +6,7 @@
     <div class="d-flex align-items-center">
         <h2>Films</h2>
         <i class="add-button far fa-plus-square ml-4"></i>
-        <form action="{{ path('search_movies') }}" method="get" class="search-form off ml-4">
+        <form action="#" method="get" class="search-form off ml-4">
             <div class="form-search">
                 <input type="text" name="search" id="search" required>
             </div>
@@ -38,6 +38,7 @@
                         <p><strong>Pas de films</strong></p>
                     </div>
                 {% endfor %}
+                <div id="result"></div>
             </div>
         </div>
     </div>

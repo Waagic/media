@@ -49,9 +49,7 @@ class HomeController extends AbstractController
     {
         $search = $request->get("search");
         $results = $movieDb->searchMovies($search);
-        return $this->render('movies_results.html.twig', [
-            'results' => $results
-        ]);
+        return $this->json($results);
     }
 
     /**
@@ -70,6 +68,16 @@ class HomeController extends AbstractController
     }
 
     /**
+     * @Route("/ajax", name="test_ajax")
+     * @return Response
+     */
+    public function testAjax(): Response
+    {
+        header("Content-Type: application/json");
+        echo json_encode(["test" => "tacotac"]); exit;
+    }
+
+    /**
      * @Route("/videogames/search", name="search_videogames")
      * @param Request $request
      * @param RAWGManager $rawg
@@ -83,6 +91,8 @@ class HomeController extends AbstractController
             'results' => $results
         ]);
     }
+
+
 
     /**
      * @Route("/albums/search", name="search_albums")
