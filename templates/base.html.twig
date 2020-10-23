@@ -6,7 +6,6 @@
     <title>{% block title %}Bienvenue !{% endblock %}</title>
     {% block stylesheets %}
         {{ encore_entry_link_tags('app') }}
-        {{ encore_entry_script_tags('app') }}
     {% endblock %}
 </head>
 <body>
@@ -21,16 +20,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="/movies">Films</a>
+                <a class="nav-link" href="{{ path('movies_index') }}">Films</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/series">Séries</a>
+                <a class="nav-link" href="{{ path('series_index') }}">Séries</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/videogames">Jeux vidéo</a>
+                <a class="nav-link" href="{{ path('videogames_index') }}">Jeux vidéo</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/album">Albums</a>
+                <a class="nav-link" href="{{ path('album_index') }}">Albums</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/logout">Déconnexion</a>

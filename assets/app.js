@@ -13,4 +13,19 @@ const $ = require('jquery');
 // the bootstrap module doesn't export/return anything
 require('bootstrap');
 
-import './functions';
+document.addEventListener("DOMContentLoaded", function() {
+    const addButton = document.querySelector(".add-button");
+    const searchForm = document.querySelector(".search-form");
+
+    addButton.addEventListener("click", function(event) {
+        if (searchForm.classList.contains("off")) {
+            event.preventDefault();
+            searchForm.classList.remove("off");
+            searchForm.classList.add("d-flex");
+        } else {
+            event.preventDefault();
+            searchForm.classList.remove("d-flex");
+            searchForm.classList.add("off");
+        }
+    });
+});
