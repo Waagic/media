@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e8e47f2-e913-49ee-a81a-17e0b3809bdd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="66c272f7-d47e-4a0c-8516-9580c168dd1d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
-    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  <component name="ComposerSettings">
     <execution />
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -121,312 +113,21 @@
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-code" />
     </include_path>
   </component>
-  <component name="ProjectId" id="1iGsfnJqf6qxvmrjJV6QvmZ4quH" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DatabaseDriversLRU" value="oracle&#10;mysql" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates" />
-      <recent name="$PROJECT_DIR$/templates/movies" />
-      <recent name="$PROJECT_DIR$/templates/front" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates" />
-      <recent name="$PROJECT_DIR$/templates/album" />
-      <recent name="$PROJECT_DIR$/src/Controller" />
-      <recent name="$PROJECT_DIR$/src/Service/API" />
-      <recent name="$PROJECT_DIR$/templates/games" />
-    </key>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="2e8e47f2-e913-49ee-a81a-17e0b3809bdd" name="Default Changelist" comment="" />
-      <created>1601545368503</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1601545368503</updated>
-      <workItem from="1601545369551" duration="221000" />
-      <workItem from="1601547184793" duration="143000" />
-      <workItem from="1601547347801" duration="1101000" />
-      <workItem from="1601557800654" duration="313000" />
-      <workItem from="1601558223880" duration="3025000" />
-      <workItem from="1601561451956" duration="257000" />
-      <workItem from="1601561918926" duration="5036000" />
-      <workItem from="1601902062532" duration="7449000" />
-      <workItem from="1601968220413" duration="12975000" />
-      <workItem from="1601990118114" duration="303000" />
-      <workItem from="1602080779056" duration="4973000" />
-      <workItem from="1602141705032" duration="1716000" />
-      <workItem from="1603097511536" duration="542000" />
-      <workItem from="1603115207766" duration="524000" />
-      <workItem from="1603182459252" duration="5330000" />
-      <workItem from="1603196031587" duration="6376000" />
-      <workItem from="1603266236746" duration="806000" />
-      <workItem from="1603369234102" duration="4402000" />
-      <workItem from="1603374143120" duration="1962000" />
-      <workItem from="1603438418588" duration="7613000" />
-      <workItem from="1603454537838" duration="7611000" />
-      <workItem from="1603699808631" duration="16328000" />
-    </task>
-    <task id="LOCAL-00001" summary="WIP - Movies">
-      <created>1601567345329</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1601567345329</updated>
-    </task>
-    <task id="LOCAL-00002" summary="WIP - Movies - Search">
-      <created>1601907254165</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1601907254165</updated>
-    </task>
-    <task id="LOCAL-00003" summary="WIP - Movies - Search">
-      <created>1601909943663</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1601909943663</updated>
-    </task>
-    <task id="LOCAL-00004" summary="WIP - Movies ok">
-      <created>1601988051739</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1601988051739</updated>
-    </task>
-    <task id="LOCAL-00005" summary="nik Romain">
-      <created>1601989126901</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1601989126901</updated>
-    </task>
-    <task id="LOCAL-00006" summary="WIP - Series">
-      <created>1601989669037</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1601989669037</updated>
-    </task>
-    <task id="LOCAL-00007" summary="WIP - Series ok">
-      <created>1602084248139</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1602084248139</updated>
-    </task>
-    <task id="LOCAL-00008" summary="WIP - Jeux">
-      <created>1602085850012</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1602085850012</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Jeux ok">
-      <created>1603185646113</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1603185646113</updated>
-    </task>
-    <task id="LOCAL-00010" summary="WIP - Album">
-      <created>1603199569341</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1603199569341</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Album ok">
-      <created>1603203330433</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1603203330433</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Navbar">
-      <created>1603203540589</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1603203540589</updated>
-    </task>
-    <task id="LOCAL-00013" summary=":'(">
-      <created>1603440829343</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1603440829343</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Navbar">
-      <created>1603444502702</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1603444502702</updated>
-    </task>
-    <task id="LOCAL-00015" summary="p'tit reduce">
-      <created>1603464422826</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1603464422826</updated>
-    </task>
-    <task id="LOCAL-00016" summary="WIP - Modale">
-      <created>1603723166129</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1603723166129</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Modale ok">
-      <created>1603728158367</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1603728158367</updated>
-    </task>
-    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_NEW_TODO" value="false" />
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="WIP - Movies" />
-    <MESSAGE value="WIP - Movies - Search" />
-    <MESSAGE value="WIP - Movies ok" />
-    <MESSAGE value="nik Romain" />
-    <MESSAGE value="WIP - Series" />
-    <MESSAGE value="WIP - Series ok" />
-    <MESSAGE value="WIP - Jeux" />
-    <MESSAGE value="Jeux ok" />
-    <MESSAGE value="WIP - Album" />
-    <MESSAGE value="Album ok" />
-    <MESSAGE value=":'(" />
-    <MESSAGE value="Navbar" />
-    <MESSAGE value="p'tit reduce" />
-    <MESSAGE value="WIP - Modale" />
-    <MESSAGE value="Modale ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modale ok" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="1177" y="533" key="#SQL_Dialects" timestamp="1601560893384">
-      <screen x="0" y="23" width="2560" height="1359" />
-    </state>
-    <state x="1177" y="533" key="#SQL_Dialects/0.23.2560.1359@0.23.2560.1359" timestamp="1601560893384" />
-    <state x="1520" y="368" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601562026369">
-      <screen x="0" y="23" width="2560" height="1359" />
-    </state>
-    <state x="1520" y="368" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1359@0.23.2560.1359" timestamp="1601562026369" />
-    <state x="1626" y="508" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603370833160">
-      <screen x="0" y="23" width="2560" height="1360" />
-    </state>
-    <state x="1626" y="508" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1360@0.23.2560.1360" timestamp="1603370833160" />
-    <state x="1696" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603202889906">
-      <screen x="0" y="23" width="2560" height="1360" />
-    </state>
-    <state x="1696" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.2560.1360@0.23.2560.1360" timestamp="1603202889906" />
-    <state x="1696" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.2560.1361@0.23.2560.1361" timestamp="1601990420475" />
-    <state x="1658" y="465" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603203242465">
-      <screen x="0" y="23" width="2560" height="1360" />
-    </state>
-    <state x="1658" y="465" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.2560.1360@0.23.2560.1360" timestamp="1603203242465" />
-    <state x="1658" y="465" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.2560.1361@0.23.2560.1361" timestamp="1601909061290" />
-    <state x="1497" y="210" key="CommitChangelistDialog2" timestamp="1603728158079">
-      <screen x="0" y="23" width="2560" height="1360" />
-    </state>
-    <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1359@0.23.2560.1359" timestamp="1601567344285" />
-    <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1360@0.23.2560.1360" timestamp="1603728158079" />
-    <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1361@0.23.2560.1361" timestamp="1602085849848" />
-    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1601909740247">
-      <screen x="0" y="23" width="2560" height="1361" />
-    </state>
-    <state width="254" height="195" key="DatabaseViewActions_Filter/0.23.2560.1361@0.23.2560.1361" timestamp="1601909740247" />
-    <state x="1566" y="487" key="EditFileWatcherDialog" timestamp="1601547424437">
-      <screen x="0" y="23" width="2560" height="1359" />
-    </state>
-    <state x="1566" y="487" key="EditFileWatcherDialog/0.23.2560.1359@0.23.2560.1359" timestamp="1601547424437" />
-    <state x="618" y="23" key="FileDocumentManager.FileCacheConflict" timestamp="1603203035597">
-      <screen x="0" y="23" width="2560" height="1360" />
-    </state>
-    <state x="618" y="23" key="FileDocumentManager.FileCacheConflict/0.23.2560.1360@0.23.2560.1360" timestamp="1603203035597" />
-    <state width="846" height="385" key="GridCell.Tab.0.bottom" timestamp="1601562082409">
-      <screen x="0" y="23" width="2560" height="1359" />
-    </state>
-    <state width="846" height="385" key="GridCell.Tab.0.bottom/0.23.2560.1359@0.23.2560.1359" timestamp="1601562082409" />
-    <state width="846" height="385" key="GridCell.Tab.0.center" timestamp="1601562082408">
-      <screen x="0" y="23" width="2560" height="1359" />
-    </state>
-    <state width="846" height="385" key="GridCell.Tab.0.center/0.23.2560.1359@0.23.2560.1359" timestamp="1601562082408" />
-    <state width="846" height="385" key="GridCell.Tab.0.left" timestamp="1601562082407">
-      <screen x="0" y="23" width="2560" height="1359" />
-    </state>
-    <state width="846" height="385" key="GridCell.Tab.0.left/0.23.2560.1359@0.23.2560.1359" timestamp="1601562082407" />
-    <state width="846" height="385" key="GridCell.Tab.0.right" timestamp="1601562082408">
-      <screen x="0" y="23" width="2560" height="1359" />
-    </state>
-    <state width="846" height="385" key="GridCell.Tab.0.right/0.23.2560.1359@0.23.2560.1359" timestamp="1601562082408" />
-    <state x="1666" y="420" key="NewPhpClassDialog" timestamp="1601902361327">
-      <screen x="0" y="23" width="2560" height="1361" />
-    </state>
-    <state x="1666" y="420" key="NewPhpClassDialog/0.23.2560.1361@0.23.2560.1361" timestamp="1601902361327" />
-    <state x="1724" y="329" key="RollbackChangesDialog" timestamp="1603724015855">
-      <screen x="0" y="23" width="2560" height="1360" />
-    </state>
-    <state x="1724" y="329" key="RollbackChangesDialog/0.23.2560.1360@0.23.2560.1360" timestamp="1603724015855" />
-    <state x="1421" y="342" key="SettingsEditor" timestamp="1601985434526">
-      <screen x="0" y="23" width="2560" height="1361" />
-    </state>
-    <state x="1421" y="342" key="SettingsEditor/0.23.2560.1361@0.23.2560.1361" timestamp="1601985434526" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1603726972052">
-      <screen x="0" y="23" width="2560" height="1360" />
-    </state>
-    <state width="500" height="445" key="SwitcherDM/0.23.2560.1360@0.23.2560.1360" timestamp="1603726972052" />
-    <state width="500" height="445" key="SwitcherDM/0.23.2560.1361@0.23.2560.1361" timestamp="1601977533825" />
-    <state x="1520" y="439" key="Vcs.Push.Dialog.v2" timestamp="1603723172409">
-      <screen x="0" y="23" width="2560" height="1360" />
-    </state>
-    <state x="1520" y="438" key="Vcs.Push.Dialog.v2/0.23.2560.1359@0.23.2560.1359" timestamp="1601567350283" />
-    <state x="1520" y="439" key="Vcs.Push.Dialog.v2/0.23.2560.1360@0.23.2560.1360" timestamp="1603723172409" />
-    <state x="1520" y="439" key="Vcs.Push.Dialog.v2/0.23.2560.1361@0.23.2560.1361" timestamp="1602085853840" />
-    <state x="1658" y="514" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1601563612029">
-      <screen x="0" y="23" width="2560" height="1359" />
-    </state>
-    <state x="1658" y="514" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.23.2560.1359@0.23.2560.1359" timestamp="1601563612029" />
-    <state x="1380" y="123" width="1080" height="1159" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1601547327859">
-      <screen x="0" y="23" width="2560" height="1359" />
-    </state>
-    <state x="1380" y="123" width="1080" height="1159" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.2560.1359@0.23.2560.1359" timestamp="1601547327859" />
-    <state x="1712" y="623" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603373579112">
-      <screen x="0" y="23" width="2560" height="1360" />
-    </state>
-    <state x="1712" y="623" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.2560.1360@0.23.2560.1360" timestamp="1603373579112" />
-    <state x="305" y="331" key="run.anything.popup" timestamp="1603447913104">
-      <screen x="0" y="23" width="2560" height="1360" />
-    </state>
-    <state x="305" y="331" key="run.anything.popup/0.23.2560.1360@0.23.2560.1360" timestamp="1603447913104" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
