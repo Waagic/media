@@ -4,6 +4,8 @@
     <list default="true" id="2e8e47f2-e913-49ee-a81a-17e0b3809bdd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/_card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
     </list>
@@ -184,7 +186,8 @@
       <workItem from="1603369234102" duration="4402000" />
       <workItem from="1603374143120" duration="1962000" />
       <workItem from="1603438418588" duration="7613000" />
-      <workItem from="1603454537838" duration="7220000" />
+      <workItem from="1603454537838" duration="7611000" />
+      <workItem from="1603699808631" duration="11251000" />
     </task>
     <task id="LOCAL-00001" summary="WIP - Movies">
       <created>1601567345329</created>
@@ -284,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603444502702</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="p'tit reduce">
+      <created>1603464422826</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1603464422826</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +316,8 @@
     <MESSAGE value="Album ok" />
     <MESSAGE value=":'(" />
     <MESSAGE value="Navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Navbar" />
+    <MESSAGE value="p'tit reduce" />
+    <option name="LAST_COMMIT_MESSAGE" value="p'tit reduce" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1177" y="533" key="#SQL_Dialects" timestamp="1601560893384">
@@ -331,11 +342,11 @@
     </state>
     <state x="1658" y="465" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.2560.1360@0.23.2560.1360" timestamp="1603203242465" />
     <state x="1658" y="465" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.2560.1361@0.23.2560.1361" timestamp="1601909061290" />
-    <state x="1497" y="210" key="CommitChangelistDialog2" timestamp="1603444502497">
+    <state x="1497" y="210" key="CommitChangelistDialog2" timestamp="1603464422477">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
     <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1359@0.23.2560.1359" timestamp="1601567344285" />
-    <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1360@0.23.2560.1360" timestamp="1603444502497" />
+    <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1360@0.23.2560.1360" timestamp="1603464422477" />
     <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1361@0.23.2560.1361" timestamp="1602085849848" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1601909740247">
       <screen x="0" y="23" width="2560" height="1361" />
@@ -373,16 +384,16 @@
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
     <state x="1421" y="342" key="SettingsEditor/0.23.2560.1361@0.23.2560.1361" timestamp="1601985434526" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1603463001154">
+    <state width="500" height="445" key="SwitcherDM" timestamp="1603719542208">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/0.23.2560.1360@0.23.2560.1360" timestamp="1603463001154" />
+    <state width="500" height="445" key="SwitcherDM/0.23.2560.1360@0.23.2560.1360" timestamp="1603719542208" />
     <state width="500" height="445" key="SwitcherDM/0.23.2560.1361@0.23.2560.1361" timestamp="1601977533825" />
-    <state x="1520" y="439" key="Vcs.Push.Dialog.v2" timestamp="1603444505874">
+    <state x="1520" y="439" key="Vcs.Push.Dialog.v2" timestamp="1603464426899">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
     <state x="1520" y="438" key="Vcs.Push.Dialog.v2/0.23.2560.1359@0.23.2560.1359" timestamp="1601567350283" />
-    <state x="1520" y="439" key="Vcs.Push.Dialog.v2/0.23.2560.1360@0.23.2560.1360" timestamp="1603444505874" />
+    <state x="1520" y="439" key="Vcs.Push.Dialog.v2/0.23.2560.1360@0.23.2560.1360" timestamp="1603464426899" />
     <state x="1520" y="439" key="Vcs.Push.Dialog.v2/0.23.2560.1361@0.23.2560.1361" timestamp="1602085853840" />
     <state x="1658" y="514" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1601563612029">
       <screen x="0" y="23" width="2560" height="1359" />

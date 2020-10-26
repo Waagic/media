@@ -49,6 +49,11 @@ class HomeController extends AbstractController
     {
         $search = $request->get("search");
         $results = $movieDb->searchMovies($search);
+        $i = 0;
+        foreach ($results["results"] as $result) {
+            $results["results"][$i]["poster"] = "https://image.tmdb.org/t/p/w500/" . $result["poster_path"];
+            $i++;
+        }
         return $this->json($results);
     }
 
@@ -62,19 +67,13 @@ class HomeController extends AbstractController
     {
         $search = $request->get("search");
         $results = $movieDb->searchSeries($search);
-        return $this->render('series_results.html.twig', [
-            'results' => $results
-        ]);
-    }
-
-    /**
-     * @Route("/ajax", name="test_ajax")
-     * @return Response
-     */
-    public function testAjax(): Response
-    {
-        header("Content-Type: application/json");
-        echo json_encode(["test" => "tacotac"]); exit;
+        $i = 0;
+        foreach ($results["results"] as $result) {
+            $results["results"][$i]["title"] = $result["name"];
+            $results["results"][$i]["poster"] = "https://image.tmdb.org/t/p/w500/" . $result["poster_path"];
+            $i++;
+        }
+        return $this->json($results);
     }
 
     /**
@@ -87,11 +86,14 @@ class HomeController extends AbstractController
     {
         $search = $request->get("search");
         $results = $rawg->searchVideoGame($search);
-        return $this->render('videogames_results.html.twig', [
-            'results' => $results
-        ]);
+        $i = 0;
+        foreach ($results["results"] as $result) {
+            $results["results"][$i]["title"] = $result["name"];
+            $results["results"][$i]["poster"] = $result["background_image"];
+            $i++;
+        }
+        return $this->json($results);
     }
-
 
 
     /**
@@ -104,8 +106,12 @@ class HomeController extends AbstractController
     {
         $search = $request->get("search");
         $results = $deezer->searchAlbums($search);
-        return $this->render('albums_results.html.twig', [
-            'results' => $results
-        ]);
+        $i = 0;
+        foreach ($results["data"] as $result) {
+            $results["results"][$i]["title"] = $result["title"];
+            $results["results"][$i]["poster"] = $result["cover_big"];
+            $i++;
+        }
+        return $this->json($results);
     }
 }

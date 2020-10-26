@@ -2,154 +2,180 @@
 
 {% block body %}
     <div class="container-fluid">
-    <h1>Médiathèque</h1>
-    <div class="d-flex align-items-center">
-        <h2>Films</h2>
-        <i class="add-button far fa-plus-square ml-4"></i>
-        <form action="#" method="get" class="search-form off ml-4">
-            <div class="form-search">
-                <input type="text" name="search" id="search" required>
-            </div>
-            <div class="form-search">
-                <input type="submit" value="We go" class="ml-2">
-            </div>
-        </form>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <div class="row">
-                {% for movie in movies %}
-                    <div class="col-6 col-md-4 col-xl-3">
-                        <div class="card media-card mb-4">
-                            <form method="post" action="{{ path('movies_delete', {'id': movie.id}) }}"
-                                  onsubmit="return confirm('Are you sure you want to delete this item?');">
-                                <input type="hidden" name="_method" value="DELETE">
-                                <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ movie.id) }}">
-                                <button class="btn btn-outline-danger">Delete</button>
-                            </form>
-                            <img class="card-img-top" src="{{ movie.poster }}">
-                            <div class="card-body">
-                                <h5 class="card-title d-flex justify-content-center">{{ movie.title }}</h5>
-                            </div>
-                        </div>
-                    </div>
-                {% else %}
-                    <div>
-                        <p><strong>Pas de films</strong></p>
-                    </div>
-                {% endfor %}
-                <div id="result"></div>
+        <h1>Médiathèque</h1>
+        <div class="d-flex align-items-center">
+            <h2>Films</h2>
+            <i class="add-button far fa-plus-square ml-4"></i>
+            <div class="search-form off ml-4">
+                <div class="form-search">
+                    <input type="text" name="search" class="search" data-media-type="movies">
+                    <!-- Button trigger modal -->
+                    <button type="button" id="search-btn" class="btn btn-primary ml-3 search-btn" data-toggle="modal"
+                            data-target="#exampleModal">
+                        Ok
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-
-    <h2>Séries TV</h2>
-    <div class="row">
-        <div class="col-12">
-            <form action="{{ path('search_series') }}" method="get" class="d-flex mb-2">
-                <div class="form-search">
-                    <label for="name">Ajouter une série : </label>
-                    <input type="text" name="search" id="search" required>
-                </div>
-                <div class="form-search">
-                    <input type="submit" value="We go" class="ml-2">
-                </div>
-            </form>
-            <div class="row">
-                {% for serie in series %}
-                    <div class="col-6 col-md-4 col-xl-3">
-                        <div class="card media-card mb-4">
-                            <form method="post" action="{{ path('series_delete', {'id': serie.id}) }}"
-                                  onsubmit="return confirm('Are you sure you want to delete this item?');">
-                                <input type="hidden" name="_method" value="DELETE">
-                                <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ serie.id) }}">
-                                <button class="btn btn-outline-danger">Delete</button>
-                            </form>
-                            <img class="card-img-top" src="{{ serie.poster }}">
-                            <div class="card-body">
-                                <h5 class="card-title d-flex justify-content-center">{{ serie.title }}</h5>
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    {% for movie in movies %}
+                        <div class="col-6 col-md-4 col-xl-3">
+                            <div class="card media-card mb-4">
+                                <form method="post" action="{{ path('movies_delete', {'id': movie.id}) }}"
+                                      onsubmit="return confirm('Are you sure you want to delete this item?');">
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ movie.id) }}">
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </form>
+                                <img class="card-img-top" src="{{ movie.poster }}">
+                                <div class="card-body">
+                                    <h5 class="card-title d-flex justify-content-center">{{ movie.title }}</h5>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                {% else %}
-                    <div>
-                        <p><strong>Pas de séries</strong></p>
-                    </div>
-                {% endfor %}
+                    {% else %}
+                        <div>
+                            <p><strong>Pas de films</strong></p>
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
-    </div>
 
-    <h2>Jeux vidéo</h2>
-    <div class="row">
-        <div class="col-12">
-            <form action="{{ path('search_videogames') }}" method="get" class="d-flex mb-2">
+        <div class="d-flex align-items-center">
+            <h2>Séries</h2>
+            <i class="add-button far fa-plus-square ml-4"></i>
+            <div class="search-form off ml-4">
                 <div class="form-search">
-                    <label for="name">Ajouter un jeu : </label>
-                    <input type="text" name="search" id="search" required>
+                    <input type="text" name="search" class="search" data-media-type="series">
+                    <!-- Button trigger modal -->
+                    <button type="button" id="search-btn" class="btn btn-primary ml-3 search-btn" data-toggle="modal"
+                            data-target="#exampleModal">
+                        Ok
+                    </button>
                 </div>
-                <div class="form-search">
-                    <input type="submit" value="We go" class="ml-2">
-                </div>
-            </form>
-            <div class="row">
-                {% for game in games %}
-                    <div class="col-6 col-md-4 col-xl-3">
-                        <div class="card media-card mb-4">
-                            <form method="post" action="{{ path('videogames_delete', {'id': game.id}) }}"
-                                  onsubmit="return confirm('Are you sure you want to delete this item?');">
-                                <input type="hidden" name="_method" value="DELETE">
-                                <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ game.id) }}">
-                                <button class="btn btn-outline-danger">Delete</button>
-                            </form>
-                            <img class="card-img-top" src="{{ game.poster }}">
-                            <div class="card-body">
-                                <h5 class="card-title d-flex justify-content-center">{{ game.title }}</h5>
-                            </div>
-                        </div>
-                    </div>
-                {% else %}
-                    <div>
-                        <p><strong>Pas de jeux</strong></p>
-                    </div>
-                {% endfor %}
             </div>
         </div>
-    </div>
-
-    <h2>Albums</h2>
-    <div class="row">
-        <div class="col-12">
-            <form action="{{ path('search_albums') }}" method="get" class="d-flex mb-2">
-                <div class="form-search">
-                    <label for="name">Ajouter un album : </label>
-                    <input type="text" name="search" id="search" required>
-                </div>
-                <div class="form-search">
-                    <input type="submit" value="We go" class="ml-2">
-                </div>
-            </form>
-            <div class="row">
-                {% for album in albums %}
-                    <div class="col-6 col-md-4 col-xl-3">
-                        <div class="card media-card mb-4">
-                            <form method="post" action="{{ path('album_delete', {'id': album.id}) }}"
-                                  onsubmit="return confirm('Are you sure you want to delete this item?');">
-                                <input type="hidden" name="_method" value="DELETE">
-                                <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ album.id) }}">
-                                <button class="btn btn-outline-danger">Delete</button>
-                            </form>
-                            <img class="card-img-top" src="{{ album.poster }}">
-                            <div class="card-body">
-                                <h5 class="card-title d-flex justify-content-center">{{ album.title }}</h5>
-                            </div>
+        <div class="row">
+            {% for serie in series %}
+                <div class="col-6 col-md-4 col-xl-3">
+                    <div class="card media-card mb-4">
+                        <form method="post" action="{{ path('series_delete', {'id': serie.id}) }}"
+                              onsubmit="return confirm('Are you sure you want to delete this item?');">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ serie.id) }}">
+                            <button class="btn btn-outline-danger">Delete</button>
+                        </form>
+                        <img class="card-img-top" src="{{ serie.poster }}">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-center">{{ serie.title }}</h5>
                         </div>
                     </div>
-                {% else %}
-                    <div>
-                        <p><strong>Pas d'album</strong></p>
+                </div>
+            {% else %}
+                <div>
+                    <p><strong>Pas de séries</strong></p>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="d-flex align-items-center">
+            <h2>Jeux vidéo</h2>
+            <i class="add-button far fa-plus-square ml-4"></i>
+            <div class="search-form off ml-4">
+                <div class="form-search">
+                    <input type="text" name="search" class="search" data-media-type="videogames">
+                    <!-- Button trigger modal -->
+                    <button type="button" id="search-btn" class="btn btn-primary ml-3 search-btn" data-toggle="modal"
+                            data-target="#exampleModal">
+                        Ok
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for game in games %}
+                <div class="col-6 col-md-4 col-xl-3">
+                    <div class="card media-card mb-4">
+                        <form method="post" action="{{ path('videogames_delete', {'id': game.id}) }}"
+                              onsubmit="return confirm('Are you sure you want to delete this item?');">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ game.id) }}">
+                            <button class="btn btn-outline-danger">Delete</button>
+                        </form>
+                        <img class="card-img-top" src="{{ game.poster }}">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-center">{{ game.title }}</h5>
+                        </div>
                     </div>
-                {% endfor %}
+                </div>
+            {% else %}
+                <div>
+                    <p><strong>Pas de jeux</strong></p>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="d-flex align-items-center">
+            <h2>Albums</h2>
+            <i class="add-button far fa-plus-square ml-4"></i>
+            <div class="search-form off ml-4">
+                <div class="form-search">
+                    <input type="text" name="search" class="search" data-media-type="albums">
+                    <!-- Button trigger modal -->
+                    <button type="button" id="search-btn" class="btn btn-primary ml-3 search-btn" data-toggle="modal"
+                            data-target="#exampleModal">
+                        Ok
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for album in albums %}
+                <div class="col-6 col-md-4 col-xl-3">
+                    <div class="card media-card mb-4">
+                        <form method="post" action="{{ path('album_delete', {'id': album.id}) }}"
+                              onsubmit="return confirm('Are you sure you want to delete this item?');">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ album.id) }}">
+                            <button class="btn btn-outline-danger">Delete</button>
+                        </form>
+                        <img class="card-img-top" src="{{ album.poster }}">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-center">{{ album.title }}</h5>
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <div>
+                    <p><strong>Pas d'album</strong></p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body row" id="result">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
             </div>
         </div>
     </div>
