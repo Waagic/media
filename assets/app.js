@@ -42,13 +42,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
         let form = item.closest('.form-search');
         let value = form.querySelector('.search').value;
         let type = form.querySelector('.search').getAttribute("data-media-type");
+        let url = form.querySelector('.search').getAttribute("data-new-url");
         parent.innerHTML = "";
         fetch(`/${type}/search?search=${value}`).then(function (response) {
             if (response.ok) {
                 response.json().then(function (json) {
                     console.log(json);
                     let total = json.results.reduce(function (accumulator, element) {
-                        return accumulator + buildSearchCard(element, type)
+                        return accumulator + buildSearchCard(element, url)
                     }, "");
                     parent.innerHTML = total;
                 });
@@ -66,7 +67,7 @@ function buildSearchCard(media, type) {
     let template =
         `
             <div class="card media-card results-card mb-4 mx-2">
-            <form action="/${type}/new" method="post">
+            <form action="${url}" method="post">
                 <input type="hidden" id="title" name="title" value="${media.title}">
                 <input type="hidden" id="poster" name="poster" value="${media.poster}">
                 <input type="submit" value="Ajouter" class="ml-2 btn btn-outline-success">
