@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e8e47f2-e913-49ee-a81a-17e0b3809bdd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/_card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,7 +184,7 @@
       <workItem from="1603374143120" duration="1962000" />
       <workItem from="1603438418588" duration="7613000" />
       <workItem from="1603454537838" duration="7611000" />
-      <workItem from="1603699808631" duration="11251000" />
+      <workItem from="1603699808631" duration="16328000" />
     </task>
     <task id="LOCAL-00001" summary="WIP - Movies">
       <created>1601567345329</created>
@@ -294,7 +291,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603464422826</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="WIP - Modale">
+      <created>1603723166129</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1603723166129</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Modale ok">
+      <created>1603728158367</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1603728158367</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +328,9 @@
     <MESSAGE value=":'(" />
     <MESSAGE value="Navbar" />
     <MESSAGE value="p'tit reduce" />
-    <option name="LAST_COMMIT_MESSAGE" value="p'tit reduce" />
+    <MESSAGE value="WIP - Modale" />
+    <MESSAGE value="Modale ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modale ok" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1177" y="533" key="#SQL_Dialects" timestamp="1601560893384">
@@ -342,11 +355,11 @@
     </state>
     <state x="1658" y="465" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.2560.1360@0.23.2560.1360" timestamp="1603203242465" />
     <state x="1658" y="465" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.2560.1361@0.23.2560.1361" timestamp="1601909061290" />
-    <state x="1497" y="210" key="CommitChangelistDialog2" timestamp="1603464422477">
+    <state x="1497" y="210" key="CommitChangelistDialog2" timestamp="1603728158079">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
     <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1359@0.23.2560.1359" timestamp="1601567344285" />
-    <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1360@0.23.2560.1360" timestamp="1603464422477" />
+    <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1360@0.23.2560.1360" timestamp="1603728158079" />
     <state x="1497" y="210" key="CommitChangelistDialog2/0.23.2560.1361@0.23.2560.1361" timestamp="1602085849848" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1601909740247">
       <screen x="0" y="23" width="2560" height="1361" />
@@ -380,20 +393,24 @@
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
     <state x="1666" y="420" key="NewPhpClassDialog/0.23.2560.1361@0.23.2560.1361" timestamp="1601902361327" />
+    <state x="1724" y="329" key="RollbackChangesDialog" timestamp="1603724015855">
+      <screen x="0" y="23" width="2560" height="1360" />
+    </state>
+    <state x="1724" y="329" key="RollbackChangesDialog/0.23.2560.1360@0.23.2560.1360" timestamp="1603724015855" />
     <state x="1421" y="342" key="SettingsEditor" timestamp="1601985434526">
       <screen x="0" y="23" width="2560" height="1361" />
     </state>
     <state x="1421" y="342" key="SettingsEditor/0.23.2560.1361@0.23.2560.1361" timestamp="1601985434526" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1603719542208">
+    <state width="500" height="445" key="SwitcherDM" timestamp="1603726972052">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/0.23.2560.1360@0.23.2560.1360" timestamp="1603719542208" />
+    <state width="500" height="445" key="SwitcherDM/0.23.2560.1360@0.23.2560.1360" timestamp="1603726972052" />
     <state width="500" height="445" key="SwitcherDM/0.23.2560.1361@0.23.2560.1361" timestamp="1601977533825" />
-    <state x="1520" y="439" key="Vcs.Push.Dialog.v2" timestamp="1603464426899">
+    <state x="1520" y="439" key="Vcs.Push.Dialog.v2" timestamp="1603723172409">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
     <state x="1520" y="438" key="Vcs.Push.Dialog.v2/0.23.2560.1359@0.23.2560.1359" timestamp="1601567350283" />
-    <state x="1520" y="439" key="Vcs.Push.Dialog.v2/0.23.2560.1360@0.23.2560.1360" timestamp="1603464426899" />
+    <state x="1520" y="439" key="Vcs.Push.Dialog.v2/0.23.2560.1360@0.23.2560.1360" timestamp="1603723172409" />
     <state x="1520" y="439" key="Vcs.Push.Dialog.v2/0.23.2560.1361@0.23.2560.1361" timestamp="1602085853840" />
     <state x="1658" y="514" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1601563612029">
       <screen x="0" y="23" width="2560" height="1359" />
