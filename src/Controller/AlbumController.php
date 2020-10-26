@@ -9,14 +9,16 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
+
 
 /**
- * @Route("/album")
+ * @Route("/albums")
  */
 class AlbumController extends AbstractController
 {
     /**
-     * @Route("/", name="album_index", methods={"GET"})
+     * @Route("/", name="albums_index", methods={"GET"})
      */
     public function index(AlbumRepository $albumRepository): Response
     {
@@ -26,7 +28,7 @@ class AlbumController extends AbstractController
     }
 
     /**
-     * @Route("/new", name="album_new", methods={"GET","POST"})
+     * @Route("/new", name="albums_new", methods={"GET","POST"})
      * @param Request $request
      * @return Response
      */
@@ -41,11 +43,11 @@ class AlbumController extends AbstractController
         $entityManager->persist($album);
         $entityManager->flush();
 
-        return $this->redirectToRoute('album_index');
+        return $this->redirectToRoute('albums_index');
     }
 
     /**
-     * @Route("/{id}", name="album_show", methods={"GET"})
+     * @Route("/{album_id}", name="albums_show", methods={"GET"}, requirements={"album_id"="\d+"})
      */
     public function show(Album $album): Response
     {
@@ -55,7 +57,7 @@ class AlbumController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="album_delete", methods={"DELETE"})
+     * @Route("/{id}", name="albums_delete", methods={"DELETE"})
      */
     public function delete(Request $request, Album $album): Response
     {

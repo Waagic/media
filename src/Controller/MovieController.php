@@ -39,7 +39,7 @@ class MovieController extends AbstractController
         $title = $request->request->get("title");
         $poster = $request->request->get("poster");
         $movie->setTitle($title);
-        $movie->setPoster("https://image.tmdb.org/t/p/w500/" . $poster);
+        $movie->setPoster($poster);
         $entityManager = $this->getDoctrine()->getManager();
         $entityManager->persist($movie);
         $entityManager->flush();

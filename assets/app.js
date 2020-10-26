@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 response.json().then(function (json) {
                     console.log(json);
                     let total = json.results.reduce(function (accumulator, element) {
-                        return accumulator + buildSearchCard(element)
+                        return accumulator + buildSearchCard(element, type)
                     }, "");
                     parent.innerHTML = total;
                 });
@@ -61,11 +61,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 // Cartes résultats modale
 
-function buildSearchCard(media) {
+function buildSearchCard(media, type) {
     let parent = document.body;
     let template =
         `
             <div class="card media-card results-card mb-4 mx-2">
+            <form action="/${type}/new" method="post">
+                <input type="hidden" id="title" name="title" value="${media.title}">
+                <input type="hidden" id="poster" name="poster" value="${media.poster}">
+                <input type="submit" value="Ajouter" class="ml-2 btn btn-outline-success">
+            </form>
                 <img class="card-img-top" src="${media.poster}">
                 <div class="card-body">
                     <h5 class="card-title d-flex justify-content-center">${media.title}</h5>

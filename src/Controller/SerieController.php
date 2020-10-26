@@ -38,7 +38,7 @@ class SerieController extends AbstractController
         $title = $request->request->get("title");
         $poster = $request->request->get("poster");
         $serie->setTitle($title);
-        $serie->setPoster("https://image.tmdb.org/t/p/w500/" . $poster);
+        $serie->setPoster($poster);
         $entityManager = $this->getDoctrine()->getManager();
         $entityManager->persist($serie);
         $entityManager->flush();
